@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    font-family: Roboto, sans-serif;
+}
+#main-header {
+    background: url('/img/grass.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+
+.navbar-brand{
+    font-size: xx-large;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.5rem;
+}
+
+nav{
+    border-bottom:2px solid rgba(0, 128, 0, 0.24) ;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+nav ul li{
+    font-size: x-large;
+    margin-left: 50px;
+}
+.nav-link.active{
+    color: rgba(248, 248, 248, 0.945);
+    position: relative;
+}
+.nav-link:hover{
+color: rgb(255, 255, 255);
+}
+.logosvg{
+    height: 100px;
+    width: 100px;
+
+}
+
+
+
+section div .card.boss{
+    border: none;
+}
+
+
+section div .card:hover{
+text-shadow: none;
+box-sizing: border-box;
+cursor: pointer;
+transition: all 0.3s ease;
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+z-index: 2;
+}
+.card-text{
+    
+        text-align: justify;
+        text-justify: inter-word;
+        }
+
+
+
+@media(min-width:991px) {
+    .nav-link.active::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #ffffff;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link.active:hover::before{
+        width: 100%;
+        visibility: visible;
+    }
+    .logosvg{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/*about us */
+
+#about{
+    padding-top:40px ;
+    padding-bottom: 40px;
+    background-color: rgb(246, 252, 246);
+}
+#service{
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.about__section-thumbnail{
+    height: 660px;
+
+}
+#about ul li{
+    text-align: justify;
+    text-justify: inter-word;
+    }
+@media(min-width:546px){
+    #about{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .about__section-thumbnail{
+        height: 800px;
+    }
+}
+
+.about__content-width{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/*form */
+
+.form-area{
+    padding-top: 5%;
+}
+.row.single-form{
+    box-shadow:0 2px 20px -5px rgba(0, 0, 0, 0.336);
+}
+.left{
+    background: url('/img/grass.jpg');
+    padding: 221px 93px;
+}
+.left h2{
+color: #ffffff;
+font-weight: 700;
+font-size: 48px;
+}
+.left h2 span{
+    font-weight: 100;
+}
+.right{
+padding: 70px 100px;
+position: relative;
+}
+.right i{
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #ffffff;
+}
+.form-control{
+    border: 2px solid rgb(128, 128, 128);
+}
+.right button{
+    border: none;
+    border-radius: 0;
+    background: #69c24e;
+    width: 180px;
+    color: #ffffff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.right button:hover{
+    background: #252525;
+}
+@media(min-width:768px) and (max-width:991px){
+    .right i{
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+
+    }
+}
+@media(max-width:767px) {
+   .left{
+    padding: 90px 15px;
+    text-align: center;
+   } 
+   .left h2{
+    font-size: 25px;
+   }
+   .right{
+    padding: 25px;
+   }
+   .right i{
+    top: -52px;
+    transform: rotate(90deg);
+    left: 45%;
+   }
+   .right button{
+    width: 150px;
+    padding: 12px 0;
+   } 
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
