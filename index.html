@@ -40,7 +40,7 @@
           <div class="hero__content h-100 container-xxl position-relative">
           <div class="d-flex h-100 align-items-center">
           <div class="text-white">
-          <h1 class="display-1"> <em>GreenStride</em> offers <br> the best <br> Gardening service and Lawn mowing </h1>
+          <h1 class="display-1"> <em>GreenStride</em><br> offers the best <br> Gardening service and Lawn mowing </h1>
         </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
               <h5 class="card-title">We solve your problems!</h5>
               <h6 class="card-subtitle mb-2 text-muted">Just call us</h6>
               <p class="card-text">In a few minutes we make a plan for you</p>
-              <a href="#" class="btn btn-success">Make your date</a>
+              <a href="#contact" class="btn btn-success">Contact Us!</a>
             </div>
           </div>
         </div>
@@ -146,11 +146,17 @@
               </div>
               <div class="mb-3">
                 <label for="phoneNumber" class="form-label">Phone number</label>
-                <input type="text" maxlength="9" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="9"  placeholder="123456789"  class="form-control" id="phone" required>
+                <input type="text" maxlength="11" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="9"  placeholder="123456789"  class="form-control" id="phone" required>
               </div>
               <div class="mb-3">
-                <label for="zipCode" class="form-label num">Zip Code</label>
+                <label for="zipCode" class="form-label num">Zip Code and address</label>
                 <input type="text" maxlength="5" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="5"  placeholder="1 2 3 4 5" class="form-control" id="zip" required>
+              </div>
+              <div class="mb-3">
+                <div class="form-floating">
+                  <textarea class="form-control"  id="floatingTextarea2" style="height: 100px" required></textarea>
+                  <label for="floatingTextarea2">Address</label>
+                </div>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>

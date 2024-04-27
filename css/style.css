@@ -51,16 +51,8 @@ section div .card.boss{
 }
 
 
-section div .card:hover{
-text-shadow: none;
-box-sizing: border-box;
-cursor: pointer;
-transition: all 0.3s ease;
--webkit-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);
-z-index: 2;
-}
+
+
 .card-text{
     
         text-align: justify;
@@ -91,6 +83,16 @@ z-index: 2;
         height: 60px;
         width: 60px;
     }
+    section div .card:hover{
+        text-shadow: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        z-index: 2;
+        }
 }
 
 /*about us */
@@ -137,7 +139,7 @@ z-index: 2;
 }
 .left{
     background: url('/img/grass.jpg');
-    padding: 221px 93px;
+    padding: 295px 93px;
 }
 .left h2{
 color: #ffffff;
@@ -160,6 +162,9 @@ position: relative;
 }
 .form-control{
     border: 2px solid rgb(128, 128, 128);
+}
+#floatingTextarea2{
+    height: 200px;
 }
 .right button{
     border: none;
