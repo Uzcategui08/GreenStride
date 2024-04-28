@@ -12,7 +12,7 @@ function sendEmail(){
     Zip Code: ${zip.value}<br> Direction: ${direction.value}`;
 
     Email.send({
-        SecureToken:"ee64494f-42ba-44fc-9b8a-ffdb5ad511c0",
+        SecureToken:"",
         To : 'greenstridemarketing@gmail.com',
         From : "greenstridemarketing@gmail.com",
         Subject : "New client!",
